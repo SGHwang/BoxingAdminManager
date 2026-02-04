@@ -1,0 +1,8 @@
+{
+  "scripts": {
+    "build": "copy appsscript.json dist\\appsscript.json && xcopy /Y /I src\\*.html dist\\",
+    "push": "npm run build && clasp.cmd push",
+    "run": "clasp.cmd run main",
+    "logs": "clasp.cmd logs"
+  }
+}

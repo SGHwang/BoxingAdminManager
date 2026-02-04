@@ -1,0 +1,36 @@
+{
+  "compilerOptions": {
+    /* GAS 런타임 호환 */
+    "target": "ES2019",
+    "lib": ["ES2019"],
+
+    /* clasp/Apps Script는 기본적으로 CommonJS/단일 파일 형태와 궁합이 좋음 */
+    "module": "CommonJS",
+
+    /* 출력/입력 폴더 구조 */
+    "rootDir": "src",
+    "outDir": "dist",
+
+    /* 타입: GAS 전용 타입을 강제 */
+    "types": ["google-apps-script"],
+
+    /* 개발 품질 */
+    "strict": true,
+    "noImplicitAny": true,
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true,
+
+    /* 빌드/실행 편의 */
+    "sourceMap": false,
+    "declaration": false,
+
+    /* TS 편의 */
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+
+    /* 파일명 대소문자 등 OS 차이 방지 */
+    "forceConsistentCasingInFileNames": true
+  },
+  "include": ["src/**/*.ts"],
+  "exclude": ["node_modules", "dist"]
+}

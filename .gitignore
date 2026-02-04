@@ -1,0 +1,64 @@
+# --------------------------------------------------
+# Google Apps Script / clasp
+# --------------------------------------------------
+
+# Local clasp config (contains real scriptId)
+.clasp.json
+
+# OAuth & local auth cache
+.clasp-oauth.json
+.oauth2/
+
+# --------------------------------------------------
+# Node / npm (if used with clasp + build tools)
+# --------------------------------------------------
+
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# --------------------------------------------------
+# Build output (TypeScript / bundlers)
+# --------------------------------------------------
+
+dist/
+build/
+out/
+
+# --------------------------------------------------
+# Environment / secrets
+# --------------------------------------------------
+
+.env
+.env.*
+!.env.example
+
+# --------------------------------------------------
+# Logs
+# --------------------------------------------------
+
+logs/
+*.log
+
+# --------------------------------------------------
+# OS / Editor noise
+# --------------------------------------------------
+
+.DS_Store
+Thumbs.db
+
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+
+.idea/
+
+# --------------------------------------------------
+# Temporary / backup files
+# --------------------------------------------------
+
+*.swp
+*.swo
+*~

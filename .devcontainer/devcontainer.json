@@ -1,0 +1,29 @@
+{
+  "name": "my-cloud-ide",
+  "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
+
+  "features": {
+    "ghcr.io/devcontainers/features/node:1": {
+      "version": "16.17.0"
+    }
+  },
+
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "formulahendry.code-runner",
+        "github.copilot",
+        "github.copilot-chat",
+        "ms-ceintl.vscode-language-pack-ko",
+        "ms-vscode-remote.remote-containers",
+        "ms-vscode.cpptools",
+        "openai.chatgpt",
+        "ritwickdey.liveserver"
+      ],
+      "settings": {
+        "editor.formatOnSave": true,
+      },
+      "postCreateCommand": "if [ ! -f package.json ]; then npm i -g @google/clasp; npm init -y; fi && npm i -D typescript @types/google-apps-script"
+    }
+  }
+}
